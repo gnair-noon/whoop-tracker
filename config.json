@@ -7,15 +7,15 @@
   },
   "targets": {
     "noonAED": {
-      "site": "Noon UAE", "currency": "AED", "extractor": "noon",
-      "urls": {
-        "N70168417V": "https://www.noon.com/uae-en/one-12-month-membership-5-0-health-and-fitness-wearable-24-7-activity-tracker-with-vo2-max-sleep-tracking-personalized-coaching-menstrual-cycle-insights-14-days-battery-life-one-onyx/N70168417V/p/",
-        "N70168418V": "https://www.noon.com/uae-en/peak-12-month-membership-5-0-health-and-fitness-wearable-24-7-activity-and-sleep-tracker-with-heart-rate-hrv-stress-monitor-personalized-coaching-healthspan-14-days-battery-life-peak-onyx/N70168418V/p/",
-        "N70168416V": "https://www.noon.com/uae-en/life-12-month-membership-5-o-health-fitness-tracker-blood-pressure-insights-activity-tracking-medical-grade-ecg-14-days-battery-life-life-onyx/N70168416V/p/"
-      }
+      "site": "Noon UAE",
+      "currency": "AED",
+      "extractor": "manual",
+      "urls": {}
     },
     "amAEAED": {
-      "site": "Amazon UAE", "currency": "AED", "extractor": "amazon",
+      "site": "Amazon UAE",
+      "currency": "AED",
+      "extractor": "amazon",
       "urls": {
         "N70168417V": "https://www.amazon.ae/dp/B0DY2VVZWZ",
         "N70168418V": "https://www.amazon.ae/dp/B0DY2SWV16",
@@ -23,47 +23,63 @@
       }
     },
     "amUS": {
-      "site": "Amazon USA", "currency": "USD", "extractor": "amazon",
+      "site": "Amazon USA",
+      "currency": "USD",
+      "extractor": "amazon",
       "urls": {
         "N70168417V": "https://www.amazon.com/dp/B0DY2VVZWZ",
-        "N70168418V": "PASTE_AMAZON_US_PEAK_URL",
-        "N70168416V": "https://www.amazon.com/dp/B0F7NJJL8T"
+        "N70168418V": "https://www.amazon.com/dp/B0DY2SWV16",
+        "N70168416V": "https://www.amazon.com/dp/B0DY2PB7RB"
       }
     },
     "amCACAD": {
-      "site": "Amazon Canada", "currency": "CAD", "extractor": "amazon",
+      "site": "Amazon Canada",
+      "currency": "CAD",
+      "extractor": "amazon",
       "urls": {
-        "N70168417V": "PASTE_AMAZON_CA_ONE_URL",
-        "N70168418V": "PASTE_AMAZON_CA_PEAK_URL",
-        "N70168416V": "PASTE_AMAZON_CA_LIFE_URL"
+        "N70168417V": "https://www.amazon.ca/dp/B0DY2VVZWZ",
+        "N70168418V": "https://www.amazon.ca/dp/B0DY2SWV16",
+        "N70168416V": "https://www.amazon.ca/dp/B0DY2PB7RB"
       }
     },
     "bbUS": {
-      "site": "Best Buy USA", "currency": "USD", "extractor": "bestbuy_api",
-      "urls": { "N70168417V": "6621041", "N70168418V": "6621043", "N70168416V": "6621045" }
+      "site": "Best Buy USA",
+      "currency": "USD",
+      "extractor": "bestbuy",
+      "urls": {
+        "N70168417V": "https://www.bestbuy.com/product/whoop-5-0-one-health-and-fitness-tracker-12-month-membership-jet-black-2025/J3GW3TK8GV/sku/6621041",
+        "N70168418V": "https://www.bestbuy.com/product/whoop-5-0-peak-health-and-fitness-tracker-12-month-membership-obsidian-2025/J3GW3TK8GT/sku/6621043",
+        "N70168416V": "https://www.bestbuy.com/product/whoop-mg-life-health-and-fitness-tracker-12-month-membership-obsidian-titanium-2025/J3GW3TK8G7"
+      }
     },
     "bbCACAD": {
-      "site": "Best Buy Canada", "currency": "CAD", "extractor": "generic",
+      "site": "Best Buy Canada",
+      "currency": "CAD",
+      "extractor": "generic",
       "urls": {
-        "N70168417V": "PASTE_BESTBUY_CA_ONE_URL",
-        "N70168418V": "PASTE_BESTBUY_CA_PEAK_URL",
-        "N70168416V": "PASTE_BESTBUY_CA_LIFE_URL"
+        "N70168417V": "https://www.bestbuy.ca/en-ca/product/whoop-5-0-one-fitness-tracker-with-fitness-and-recovery-tracking-12-month-membership-included-and-over-14-day-battery-jet-black/20135593",
+        "N70168418V": "https://www.bestbuy.ca/en-ca/product/whoop-5-0-peak-fitness-tracker-with-12-month-membership-included-over-14-day-battery-and-sleep-tracking-obsidian/20135612",
+        "N70168416V": "https://www.bestbuy.ca/en-ca/product/whoop-mg-life-fitness-tracker-with-sleep-and-recovery-tracking-12-month-membership-included-and-over-14-day-battery-obsidian/20135595"
       }
     },
     "wmUS": {
-      "site": "Walmart USA", "currency": "USD", "extractor": "walmart",
+      "site": "Walmart USA",
+      "currency": "USD",
+      "extractor": "walmart",
       "urls": {
-        "N70168417V": "PASTE_WALMART_US_ONE_URL",
-        "N70168418V": "PASTE_WALMART_US_PEAK_URL",
-        "N70168416V": "PASTE_WALMART_US_LIFE_URL"
+        "N70168417V": "",
+        "N70168418V": "",
+        "N70168416V": ""
       }
     },
     "wmCA": {
-      "site": "Walmart Canada", "currency": "CAD", "extractor": "walmart",
+      "site": "Walmart Canada",
+      "currency": "CAD",
+      "extractor": "walmart",
       "urls": {
-        "N70168417V": "PASTE_WALMART_CA_ONE_URL",
-        "N70168418V": "https://www.walmart.ca/en/ip/Wearable-WHOOP-Peak-5-0-Health-Fitness-w-12-Month-Membership/1Y7LBIG70FU7",
-        "N70168416V": "PASTE_WALMART_CA_LIFE_URL"
+        "N70168417V": "",
+        "N70168418V": "",
+        "N70168416V": ""
       }
     }
   }
