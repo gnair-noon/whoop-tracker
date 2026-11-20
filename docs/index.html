@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WHOOP price dashboard (live)</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f6f6f3; --surface:#fff; --surface2:#f0efea; --text:#1b1b19; --muted:#6b6a63; --line:#dddcd4; --good:#0f7b4a; --bad:#b4441a; --warn:#b7791f; --noon:#fff7c2; --noon-text:#3d3500; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141413; --surface:#1d1d1b; --surface2:#262624; --text:#ecebe4; --muted:#9b9a91; --line:#34332f; --good:#4cc790; --bad:#f08a5d; --warn:#e0a94a; --noon:#3a3400; --noon-text:#fff3a8; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:1400px; margin:0 auto; padding:24px 20px 48px; }
+  header { display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; align-items:flex-end; margin-bottom:16px; }
+  h1 { font-size:22px; margin:0 0 4px; } .sub { color:var(--muted); margin:0; }
+  .pill { background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:6px 12px; font-size:12.5px; }
+  .pill.stale { border-color:var(--bad); color:var(--bad); }
+  .box { background:var(--surface); border:1px solid var(--line); border-radius:12px; margin-bottom:16px; }
+  .changes { padding:12px 16px; } .changes h3 { margin:0 0 8px; font-size:13px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .chg { display:flex; flex-wrap:wrap; gap:6px 14px; padding:4px 0; border-top:1px solid var(--line); font-size:13px; }
+  .chg:first-of-type { border-top:0; }
+  .tablebox { overflow-x:auto; }
+  table { border-collapse:separate; border-spacing:0; width:100%; min-width:1250px; }
+  th, td { padding:10px 12px; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap; vertical-align:top; }
+  th { font-size:11.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; background:var(--surface2); }
+  th:first-child, td:first-child { text-align:left; position:sticky; left:0; background:var(--surface); border-right:1px solid var(--line); }
+  th:first-child { background:var(--surface2); }
+  tr:last-child td { border-bottom:0; }
+  .noon { background:var(--noon); color:var(--noon-text); } th.noon { color:var(--noon-text); }
+  .val { font-size:15px; font-weight:600; font-variant-numeric:tabular-nums; } .val.empty { color:var(--muted); font-weight:400; }
+  .tag { font-size:11px; color:var(--muted); margin-top:3px; }
+  .tag.warn { color:var(--warn); } .tag.err { color:var(--bad); }
+  .delta { font-size:11.5px; font-weight:600; margin-left:6px; } .delta.good { color:var(--good); } .delta.bad { color:var(--bad); }
+  .drop { box-shadow: inset 0 0 0 2px var(--good); }
+  .sku { font-weight:650; } .sku small { display:block; color:var(--muted); font-weight:400; font-size:12px; }
+  .note { color:var(--muted); font-size:12.5px; margin:10px 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>WHOOP price dashboard</h1>
+      <p class="sub">12-month bundles · all prices in USD · benchmark: Noon UAE · refreshed hourly by the tracker</p>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="pill" id="updated">Loading…</span><span class="pill" id="fx"></span></div>
+  </header>
+  <div class="box changes" id="changes" hidden></div>
+  <div class="box tablebox"><table id="tbl"></table></div>
+  <p class="note"><b>Cell labels:</b> “live” = the price shown on the page when the tracker last read it. “base price” = the page didn’t expose a sale price, so a Black Friday discount may not be reflected. “out of stock” and “no reading” keep the last known value. Green outline = dropped since the previous reading. The page re-checks for new data every 5 minutes.</p>
+</div>
+<script>
+(function () {
+  var SITES = [ // dashboard column order
+    ['noonAED','Noon UAE (AED)','AED','noon'], ['noonAED','Noon UAE (USD)','USD','noon'],
+    ['amAEAED','Amazon UAE (AED)','AED'], ['amAEAED','Amazon UAE (USD)','USD'],
+    ['amUS','Amazon USA (USD)','USD'],
+    ['amCACAD','Amazon Canada (CAD)','CAD'], ['amCACAD','Amazon Canada (USD)','USD'],
+    ['bbUS','Best Buy USA (USD)','USD'],
+    ['bbCACAD','Best Buy Canada (CAD)','CAD'], ['bbCACAD','Best Buy Canada (USD)','USD'],
+    ['wmUS','Walmart USA (USD)','USD'], ['wmCA','Walmart Canada (USD)','USD']
+  ];
+  var data = null;
+  function money(v, c) { if (v == null) return '—'; var s = c==='USD' ? v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}) : v.toLocaleString('en-US',{maximumFractionDigits:0}); return c==='USD' ? '$'+s : c==='CAD' ? 'C$'+s : 'AED '+s; }
+  function ago(ts) { if (!ts) return ''; var m = Math.round((Date.now()-new Date(ts))/60000); return m < 90 ? m+' min ago' : Math.round(m/60)+' h ago'; }
+  function esc(s) { return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+  function render() {
+    if (!data) return;
+    var ageMin = (Date.now()-new Date(data.updated))/60000;
+    var u = document.getElementById('updated');
+    u.textContent = 'Updated ' + ago(data.updated) + (ageMin > 150 ? ' · stale, check the tracker' : '');
+    u.className = 'pill' + (ageMin > 150 ? ' stale' : '');
+    document.getElementById('fx').textContent = 'AED ' + data.rates.AED + ' · CAD ' + data.rates.CAD.toFixed(3) + ' per USD';
+    var h = '<thead><tr><th>SKU</th>' + SITES.map(function (s) { return '<th class="'+(s[3]||'')+'">'+s[1]+'</th>'; }).join('') + '</tr></thead><tbody>';
+    data.rows.forEach(function (row) {
+      var noonCell = row.cells.noonAED, noonUSD = noonCell ? noonCell.usd : null;
+      h += '<tr><td class="sku">'+esc(row.sku)+'<small>'+esc(row.name)+'</small></td>';
+      SITES.forEach(function (s) {
+        var c = row.cells[s[0]] || {}, isUSD = s[2]==='USD', val, ccy = s[2];
+        if (isUSD) val = c.usd; else val = c.local;
+        var tag = '', cls = (s[3]||''), delta = '';
+        if (c.status === 'ok') tag = c.src === 'base' ? '<div class="tag warn">base price · '+ago(c.ts)+'</div>' : '<div class="tag">live · '+ago(c.ts)+'</div>';
+        else if (c.status === 'oos') tag = '<div class="tag warn">out of stock</div>';
+        else if (c.status === 'error') tag = '<div class="tag err">no reading'+(c.local!=null?' · last known':'')+'</div>';
+        else tag = '<div class="tag">not configured</div>';
+        if (isUSD && s[1].indexOf('Noon') < 0 && val != null && noonUSD) {
+          var d = (val/noonUSD-1)*100; delta = '<span class="delta '+(d<=0?'good':'bad')+'">'+(d>0?'+':'')+d.toFixed(1)+'%</span>';
+        }
+        if (c.prev != null && c.local != null && c.local < c.prev && c.status === 'ok') cls += ' drop';
+        h += '<td class="'+cls+'"><div class="val'+(val==null?' empty':'')+'">'+money(val, ccy)+delta+'</div>'+tag+'</td>';
+      });
+      h += '</tr>';
+    });
+    document.getElementById('tbl').innerHTML = h + '</tbody>';
+    var ch = document.getElementById('changes');
+    if (data.changes && data.changes.length) {
+      ch.hidden = false;
+      ch.innerHTML = '<h3>Recent price changes</h3>' + data.changes.slice(0,8).map(function (x) {
+        var down = x.new < x.old;
+        return '<div class="chg"><span>'+ago(x.ts)+'</span><b>'+esc(x.name)+'</b><span>'+esc(x.site)+'</span><span class="delta '+(down?'good':'bad')+'">'+(down?'▼':'▲')+' '+x.old+' → '+x.new+' '+x.currency+'</span></div>';
+      }).join('');
+    }
+  }
+  function load() {
+    fetch('prices.json?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); })
+      .then(function (j) { data = j; render(); })
+      .catch(function () { document.getElementById('updated').textContent = 'No data yet. Run the tracker once.'; });
+  }
+  load(); setInterval(load, 5*60*1000); setInterval(render, 60*1000);
+})();
+</script>
+</body>
+</html>
