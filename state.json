@@ -12,7 +12,7 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-20T14:03:37+00:00"
+  "ts": "2026-11-20T14:55:32+00:00"
  },
  "noonAED|N70168418V": {
   "fails": 0,
@@ -20,7 +20,7 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-20T14:03:37+00:00"
+  "ts": "2026-11-20T14:55:32+00:00"
  },
  "noonAED|N70168416V": {
   "fails": 0,
@@ -28,13 +28,13 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-20T14:03:37+00:00"
+  "ts": "2026-11-20T14:55:32+00:00"
  },
  "amAEAED|N70168417V": {
-  "fails": 2
+  "fails": 3
  },
  "amAEAED|N70168418V": {
-  "fails": 1,
+  "fails": 2,
   "local": 764.0,
   "currency": "AED",
   "instock": true,
@@ -42,34 +42,34 @@
   "ts": "2026-11-20T13:36:11+00:00"
  },
  "amAEAED|N70168416V": {
-  "fails": 2
+  "fails": 3
  },
  "amUS|N70168417V": {
-  "fails": 2
+  "fails": 3
  },
  "amUS|N70168418V": {
-  "fails": 2
+  "fails": 3
  },
  "amUS|N70168416V": {
-  "fails": 2
+  "fails": 3
  },
  "amCACAD|N70168417V": {
-  "fails": 2
+  "fails": 3
  },
  "amCACAD|N70168418V": {
-  "fails": 2
+  "fails": 3
  },
  "amCACAD|N70168416V": {
-  "fails": 2
+  "fails": 3
  },
  "bbUS|N70168417V": {
-  "fails": 2
+  "fails": 3
  },
  "bbUS|N70168418V": {
-  "fails": 2
+  "fails": 3
  },
  "bbUS|N70168416V": {
-  "fails": 2
+  "fails": 3
  },
  "bbCACAD|N70168417V": {
   "fails": 0,
@@ -77,7 +77,7 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-20T14:03:37+00:00"
+  "ts": "2026-11-20T14:55:32+00:00"
  },
  "bbCACAD|N70168418V": {
   "fails": 0,
@@ -85,7 +85,7 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-20T14:03:37+00:00"
+  "ts": "2026-11-20T14:55:32+00:00"
  },
  "bbCACAD|N70168416V": {
   "fails": 0,
@@ -93,24 +93,24 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-20T14:03:37+00:00"
+  "ts": "2026-11-20T14:55:32+00:00"
  },
  "wmUS|N70168417V": {
-  "fails": 2
+  "fails": 3
  },
  "wmUS|N70168418V": {
-  "fails": 2
+  "fails": 3
  },
  "wmUS|N70168416V": {
-  "fails": 2
+  "fails": 3
  },
  "wmCA|N70168417V": {
-  "fails": 2
+  "fails": 3
  },
  "wmCA|N70168418V": {
-  "fails": 2
+  "fails": 3
  },
  "wmCA|N70168416V": {
-  "fails": 2
+  "fails": 3
  }
 }
