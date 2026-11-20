@@ -1,0 +1,288 @@
+{
+ "updated": "2026-11-20T13:36:11+00:00",
+ "rates": {
+  "AED": 3.6725,
+  "CAD": 1.432537,
+  "GBP": 0.762372,
+  "USD": 1
+ },
+ "columns": [
+  {
+   "key": "noonAED",
+   "site": "Noon UAE",
+   "currency": "AED"
+  },
+  {
+   "key": "amAEAED",
+   "site": "Amazon UAE",
+   "currency": "AED"
+  },
+  {
+   "key": "amUS",
+   "site": "Amazon USA",
+   "currency": "USD"
+  },
+  {
+   "key": "amCACAD",
+   "site": "Amazon Canada",
+   "currency": "CAD"
+  },
+  {
+   "key": "bbUS",
+   "site": "Best Buy USA",
+   "currency": "USD"
+  },
+  {
+   "key": "bbCACAD",
+   "site": "Best Buy Canada",
+   "currency": "CAD"
+  },
+  {
+   "key": "wmUS",
+   "site": "Walmart USA",
+   "currency": "USD"
+  },
+  {
+   "key": "wmCA",
+   "site": "Walmart Canada",
+   "currency": "CAD"
+  }
+ ],
+ "rows": [
+  {
+   "sku": "N70168417V",
+   "name": "WHOOP One",
+   "cells": {
+    "noonAED": {
+     "local": null,
+     "currency": "AED",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "amAEAED": {
+     "local": null,
+     "currency": "AED",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "amUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "amCACAD": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "bbUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "bbCACAD": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "wmUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "wmCA": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    }
+   }
+  },
+  {
+   "sku": "N70168418V",
+   "name": "WHOOP Peak",
+   "cells": {
+    "noonAED": {
+     "local": null,
+     "currency": "AED",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "amAEAED": {
+     "local": 764.0,
+     "currency": "AED",
+     "usd": 208.03,
+     "status": "ok",
+     "ts": "2026-11-20T13:36:11+00:00",
+     "src": "page",
+     "prev": null
+    },
+    "amUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "amCACAD": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "bbUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "bbCACAD": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "wmUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "wmCA": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    }
+   }
+  },
+  {
+   "sku": "N70168416V",
+   "name": "WHOOP Life",
+   "cells": {
+    "noonAED": {
+     "local": null,
+     "currency": "AED",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "amAEAED": {
+     "local": null,
+     "currency": "AED",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "amUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "amCACAD": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "bbUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "error",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "bbCACAD": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "wmUS": {
+     "local": null,
+     "currency": "USD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    },
+    "wmCA": {
+     "local": null,
+     "currency": "CAD",
+     "usd": null,
+     "status": "unconfigured",
+     "ts": null,
+     "src": null,
+     "prev": null
+    }
+   }
+  }
+ ],
+ "changes": []
+}
