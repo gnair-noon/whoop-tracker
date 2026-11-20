@@ -28,6 +28,8 @@ SELECTORS = {
                ".a-price .a-offscreen"],
     "noon": ['[data-qa="div-price-now"]', '[data-qa="div-price"]', '[class*="priceNow"]'],
     "walmart": ['[itemprop="price"]', '[data-testid="price-wrap"] span', 'span[data-automation="buybox-price"]'],
+    "bestbuy": ['[data-testid="customer-price"] span', '.priceView-customer-price > span:first-child',
+                '[itemprop="price"]'],
     "generic": ['[itemprop="price"]', '[data-automation="product-price"]', '[class*="productPricing"] [class*="price"]'],
 }
 
@@ -148,7 +150,18 @@ def read_bestbuy_api(sku):
     return {"local": float(j["salePrice"]), "src": "page", "instock": bool(j.get("onlineAvailability", True))}
 
 
+def read_manual(sku):
+    """Prices you type into noon_prices.json (used for the Noon UAE benchmark)."""
+    data = json.loads((BASE / "noon_prices.json").read_text())
+    p = data["prices"].get(sku)
+    if p is None:
+        raise RuntimeError("URL not configured (no price in noon_prices.json)")
+    return {"local": float(p), "src": "page", "instock": True}
+
+
 def get_reading(br, tkey, target, sku):
+    if target["extractor"] == "manual":
+        return read_manual(sku)
     ref = target["urls"].get(sku, "")
     if not ref or ref.startswith("PASTE_"):
         raise RuntimeError("URL not configured")
