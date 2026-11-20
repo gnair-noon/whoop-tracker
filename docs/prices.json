@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:36:11+00:00",
+ "updated": "2026-11-20T14:03:37+00:00",
  "rates": {
   "AED": 3.6725,
   "CAD": 1.432537,
@@ -54,12 +54,12 @@
    "name": "WHOOP One",
    "cells": {
     "noonAED": {
-     "local": null,
+     "local": 699.0,
      "currency": "AED",
-     "usd": null,
-     "status": "error",
-     "ts": null,
-     "src": null,
+     "usd": 190.33,
+     "status": "ok",
+     "ts": "2026-11-20T14:03:37+00:00",
+     "src": "page",
      "prev": null
     },
     "amAEAED": {
@@ -84,7 +84,7 @@
      "local": null,
      "currency": "CAD",
      "usd": null,
-     "status": "unconfigured",
+     "status": "error",
      "ts": null,
      "src": null,
      "prev": null
@@ -99,12 +99,12 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": null,
+     "local": 39.99,
      "currency": "CAD",
-     "usd": null,
-     "status": "unconfigured",
-     "ts": null,
-     "src": null,
+     "usd": 27.92,
+     "status": "ok",
+     "ts": "2026-11-20T14:03:37+00:00",
+     "src": "page",
      "prev": null
     },
     "wmUS": {
@@ -132,19 +132,19 @@
    "name": "WHOOP Peak",
    "cells": {
     "noonAED": {
-     "local": null,
+     "local": 764.0,
      "currency": "AED",
-     "usd": null,
-     "status": "error",
-     "ts": null,
-     "src": null,
+     "usd": 208.03,
+     "status": "ok",
+     "ts": "2026-11-20T14:03:37+00:00",
+     "src": "page",
      "prev": null
     },
     "amAEAED": {
      "local": 764.0,
      "currency": "AED",
      "usd": 208.03,
-     "status": "ok",
+     "status": "error",
      "ts": "2026-11-20T13:36:11+00:00",
      "src": "page",
      "prev": null
@@ -153,7 +153,7 @@
      "local": null,
      "currency": "USD",
      "usd": null,
-     "status": "unconfigured",
+     "status": "error",
      "ts": null,
      "src": null,
      "prev": null
@@ -162,7 +162,7 @@
      "local": null,
      "currency": "CAD",
      "usd": null,
-     "status": "unconfigured",
+     "status": "error",
      "ts": null,
      "src": null,
      "prev": null
@@ -177,12 +177,12 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": null,
+     "local": 39.99,
      "currency": "CAD",
-     "usd": null,
-     "status": "unconfigured",
-     "ts": null,
-     "src": null,
+     "usd": 27.92,
+     "status": "ok",
+     "ts": "2026-11-20T14:03:37+00:00",
+     "src": "page",
      "prev": null
     },
     "wmUS": {
@@ -198,7 +198,7 @@
      "local": null,
      "currency": "CAD",
      "usd": null,
-     "status": "error",
+     "status": "unconfigured",
      "ts": null,
      "src": null,
      "prev": null
@@ -210,12 +210,12 @@
    "name": "WHOOP Life",
    "cells": {
     "noonAED": {
-     "local": null,
+     "local": 1149.0,
      "currency": "AED",
-     "usd": null,
-     "status": "error",
-     "ts": null,
-     "src": null,
+     "usd": 312.87,
+     "status": "ok",
+     "ts": "2026-11-20T14:03:37+00:00",
+     "src": "page",
      "prev": null
     },
     "amAEAED": {
@@ -240,7 +240,7 @@
      "local": null,
      "currency": "CAD",
      "usd": null,
-     "status": "unconfigured",
+     "status": "error",
      "ts": null,
      "src": null,
      "prev": null
@@ -255,12 +255,12 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": null,
+     "local": 39.99,
      "currency": "CAD",
-     "usd": null,
-     "status": "unconfigured",
-     "ts": null,
-     "src": null,
+     "usd": 27.92,
+     "status": "ok",
+     "ts": "2026-11-20T14:03:37+00:00",
+     "src": "page",
      "prev": null
     },
     "wmUS": {
