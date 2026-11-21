@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T05:56:07+00:00",
+ "updated": "2026-11-21T07:06:50+00:00",
  "rates": {
   "AED": 3.6725,
   "CAD": 1.432537,
@@ -58,7 +58,7 @@
      "currency": "AED",
      "usd": 190.33,
      "status": "ok",
-     "ts": "2026-11-21T05:56:07+00:00",
+     "ts": "2026-11-21T07:06:50+00:00",
      "src": "page",
      "prev": null
     },
@@ -99,13 +99,13 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": 59.0,
+     "local": 289.0,
      "currency": "CAD",
-     "usd": 41.19,
+     "usd": 201.74,
      "status": "ok",
-     "ts": "2026-11-21T05:56:07+00:00",
+     "ts": "2026-11-21T07:06:50+00:00",
      "src": "page",
-     "prev": 39.99
+     "prev": 59.0
     },
     "wmUS": {
      "local": null,
@@ -136,7 +136,7 @@
      "currency": "AED",
      "usd": 208.03,
      "status": "ok",
-     "ts": "2026-11-21T05:56:07+00:00",
+     "ts": "2026-11-21T07:06:50+00:00",
      "src": "page",
      "prev": null
     },
@@ -181,7 +181,7 @@
      "currency": "CAD",
      "usd": 306.45,
      "status": "ok",
-     "ts": "2026-11-21T05:56:07+00:00",
+     "ts": "2026-11-21T07:06:50+00:00",
      "src": "page",
      "prev": 259.0
     },
@@ -214,7 +214,7 @@
      "currency": "AED",
      "usd": 312.87,
      "status": "ok",
-     "ts": "2026-11-21T05:56:07+00:00",
+     "ts": "2026-11-21T07:06:50+00:00",
      "src": "page",
      "prev": null
     },
@@ -255,13 +255,13 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": 59.0,
+     "local": 289.0,
      "currency": "CAD",
-     "usd": 41.19,
+     "usd": 201.74,
      "status": "ok",
-     "ts": "2026-11-21T05:56:07+00:00",
+     "ts": "2026-11-21T07:06:50+00:00",
      "src": "page",
-     "prev": 39.99
+     "prev": 59.0
     },
     "wmUS": {
      "local": null,
@@ -285,6 +285,24 @@
   }
  ],
  "changes": [
+  {
+   "ts": "2026-11-21T07:06:50+00:00",
+   "sku": "N70168416V",
+   "name": "WHOOP Life",
+   "site": "Best Buy Canada",
+   "old": 59.0,
+   "new": 289.0,
+   "currency": "CAD"
+  },
+  {
+   "ts": "2026-11-21T07:06:50+00:00",
+   "sku": "N70168417V",
+   "name": "WHOOP One",
+   "site": "Best Buy Canada",
+   "old": 59.0,
+   "new": 289.0,
+   "currency": "CAD"
+  },
   {
    "ts": "2026-11-21T05:56:07+00:00",
    "sku": "N70168418V",
@@ -400,24 +418,6 @@
    "site": "Best Buy Canada",
    "old": 59.0,
    "new": 439.0,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-20T22:48:04+00:00",
-   "sku": "N70168417V",
-   "name": "WHOOP One",
-   "site": "Best Buy Canada",
-   "old": 59.0,
-   "new": 39.99,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-20T20:50:51+00:00",
-   "sku": "N70168416V",
-   "name": "WHOOP Life",
-   "site": "Best Buy Canada",
-   "old": 439.0,
-   "new": 39.99,
    "currency": "CAD"
   }
  ]
