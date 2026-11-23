@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-22T23:42:50+00:00",
+ "updated": "2026-11-23T01:08:35+00:00",
  "rates": {
   "AED": 3.6725,
-  "CAD": 1.433441,
-  "GBP": 0.763601,
+  "CAD": 1.433241,
+  "GBP": 0.763577,
   "USD": 1
  },
  "columns": [
@@ -58,7 +58,7 @@
      "currency": "AED",
      "usd": 190.33,
      "status": "ok",
-     "ts": "2026-11-22T23:42:50+00:00",
+     "ts": "2026-11-23T01:08:35+00:00",
      "src": "page",
      "prev": null
     },
@@ -83,7 +83,7 @@
     "amCACAD": {
      "local": 259.0,
      "currency": "CAD",
-     "usd": 180.68,
+     "usd": 180.71,
      "status": "error",
      "ts": "2026-11-22T19:50:44+00:00",
      "src": "page",
@@ -99,13 +99,13 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": 289.0,
+     "local": 39.99,
      "currency": "CAD",
-     "usd": 201.61,
+     "usd": 27.9,
      "status": "ok",
-     "ts": "2026-11-22T23:42:50+00:00",
+     "ts": "2026-11-23T01:08:35+00:00",
      "src": "page",
-     "prev": 59.0
+     "prev": 289.0
     },
     "wmUS": {
      "local": null,
@@ -136,7 +136,7 @@
      "currency": "AED",
      "usd": 208.03,
      "status": "ok",
-     "ts": "2026-11-22T23:42:50+00:00",
+     "ts": "2026-11-23T01:08:35+00:00",
      "src": "page",
      "prev": null
     },
@@ -161,7 +161,7 @@
     "amCACAD": {
      "local": 289.0,
      "currency": "CAD",
-     "usd": 201.61,
+     "usd": 201.64,
      "status": "error",
      "ts": "2026-11-22T19:50:44+00:00",
      "src": "page",
@@ -177,13 +177,13 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": 39.99,
+     "local": 59.0,
      "currency": "CAD",
-     "usd": 27.9,
+     "usd": 41.17,
      "status": "ok",
-     "ts": "2026-11-22T23:42:50+00:00",
+     "ts": "2026-11-23T01:08:35+00:00",
      "src": "page",
-     "prev": 259.0
+     "prev": 39.99
     },
     "wmUS": {
      "local": null,
@@ -214,7 +214,7 @@
      "currency": "AED",
      "usd": 312.87,
      "status": "ok",
-     "ts": "2026-11-22T23:42:50+00:00",
+     "ts": "2026-11-23T01:08:35+00:00",
      "src": "page",
      "prev": null
     },
@@ -239,7 +239,7 @@
     "amCACAD": {
      "local": 439.0,
      "currency": "CAD",
-     "usd": 306.26,
+     "usd": 306.3,
      "status": "error",
      "ts": "2026-11-22T19:50:44+00:00",
      "src": "page",
@@ -255,13 +255,13 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": 289.0,
+     "local": 39.99,
      "currency": "CAD",
-     "usd": 201.61,
+     "usd": 27.9,
      "status": "ok",
-     "ts": "2026-11-22T23:42:50+00:00",
+     "ts": "2026-11-23T01:08:35+00:00",
      "src": "page",
-     "prev": 59.0
+     "prev": 289.0
     },
     "wmUS": {
      "local": null,
@@ -285,6 +285,33 @@
   }
  ],
  "changes": [
+  {
+   "ts": "2026-11-23T01:08:35+00:00",
+   "sku": "N70168416V",
+   "name": "WHOOP Life",
+   "site": "Best Buy Canada",
+   "old": 289.0,
+   "new": 39.99,
+   "currency": "CAD"
+  },
+  {
+   "ts": "2026-11-23T01:08:35+00:00",
+   "sku": "N70168418V",
+   "name": "WHOOP Peak",
+   "site": "Best Buy Canada",
+   "old": 39.99,
+   "new": 59.0,
+   "currency": "CAD"
+  },
+  {
+   "ts": "2026-11-23T01:08:35+00:00",
+   "sku": "N70168417V",
+   "name": "WHOOP One",
+   "site": "Best Buy Canada",
+   "old": 289.0,
+   "new": 39.99,
+   "currency": "CAD"
+  },
   {
    "ts": "2026-11-22T23:42:50+00:00",
    "sku": "N70168416V",
@@ -388,33 +415,6 @@
    "ts": "2026-11-22T16:45:28+00:00",
    "sku": "N70168416V",
    "name": "WHOOP Life",
-   "site": "Best Buy Canada",
-   "old": 39.99,
-   "new": 289.0,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-22T16:45:28+00:00",
-   "sku": "N70168418V",
-   "name": "WHOOP Peak",
-   "site": "Best Buy Canada",
-   "old": 259.0,
-   "new": 59.0,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-22T14:50:50+00:00",
-   "sku": "N70168416V",
-   "name": "WHOOP Life",
-   "site": "Best Buy Canada",
-   "old": 289.0,
-   "new": 39.99,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-22T14:50:50+00:00",
-   "sku": "N70168417V",
-   "name": "WHOOP One",
    "site": "Best Buy Canada",
    "old": 39.99,
    "new": 289.0,
