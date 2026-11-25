@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T07:20:02+00:00",
+ "updated": "2026-11-25T09:07:17+00:00",
  "rates": {
   "AED": 3.6725,
   "CAD": 1.429121,
@@ -58,7 +58,7 @@
      "currency": "AED",
      "usd": 190.33,
      "status": "ok",
-     "ts": "2026-11-25T07:20:02+00:00",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -75,8 +75,8 @@
      "local": 189.0,
      "currency": "USD",
      "usd": 189.0,
-     "status": "error",
-     "ts": "2026-11-25T05:12:50+00:00",
+     "status": "ok",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -84,8 +84,8 @@
      "local": 259.0,
      "currency": "CAD",
      "usd": 181.23,
-     "status": "error",
-     "ts": "2026-11-25T05:12:50+00:00",
+     "status": "ok",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -103,7 +103,7 @@
      "currency": "CAD",
      "usd": 202.22,
      "status": "ok",
-     "ts": "2026-11-25T07:20:02+00:00",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": 39.99
     },
@@ -136,7 +136,7 @@
      "currency": "AED",
      "usd": 208.03,
      "status": "ok",
-     "ts": "2026-11-25T07:20:02+00:00",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -153,8 +153,8 @@
      "local": 199.0,
      "currency": "USD",
      "usd": 199.0,
-     "status": "error",
-     "ts": "2026-11-25T05:12:50+00:00",
+     "status": "ok",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -162,8 +162,8 @@
      "local": 289.0,
      "currency": "CAD",
      "usd": 202.22,
-     "status": "error",
-     "ts": "2026-11-25T05:12:50+00:00",
+     "status": "ok",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -177,13 +177,13 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": 439.0,
+     "local": 129.99,
      "currency": "CAD",
-     "usd": 307.18,
+     "usd": 90.96,
      "status": "ok",
-     "ts": "2026-11-25T07:20:02+00:00",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
-     "prev": 39.99
+     "prev": 439.0
     },
     "wmUS": {
      "local": null,
@@ -214,7 +214,7 @@
      "currency": "AED",
      "usd": 312.87,
      "status": "ok",
-     "ts": "2026-11-25T07:20:02+00:00",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -231,8 +231,8 @@
      "local": 299.0,
      "currency": "USD",
      "usd": 299.0,
-     "status": "error",
-     "ts": "2026-11-25T05:12:50+00:00",
+     "status": "ok",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -240,8 +240,8 @@
      "local": 439.0,
      "currency": "CAD",
      "usd": 307.18,
-     "status": "error",
-     "ts": "2026-11-25T05:12:50+00:00",
+     "status": "ok",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
      "prev": null
     },
@@ -255,13 +255,13 @@
      "prev": null
     },
     "bbCACAD": {
-     "local": 59.0,
+     "local": 289.0,
      "currency": "CAD",
-     "usd": 41.28,
+     "usd": 202.22,
      "status": "ok",
-     "ts": "2026-11-25T07:20:02+00:00",
+     "ts": "2026-11-25T09:07:17+00:00",
      "src": "page",
-     "prev": 39.99
+     "prev": 59.0
     },
     "wmUS": {
      "local": null,
@@ -285,6 +285,24 @@
   }
  ],
  "changes": [
+  {
+   "ts": "2026-11-25T09:07:17+00:00",
+   "sku": "N70168416V",
+   "name": "WHOOP Life",
+   "site": "Best Buy Canada",
+   "old": 59.0,
+   "new": 289.0,
+   "currency": "CAD"
+  },
+  {
+   "ts": "2026-11-25T09:07:17+00:00",
+   "sku": "N70168418V",
+   "name": "WHOOP Peak",
+   "site": "Best Buy Canada",
+   "old": 439.0,
+   "new": 129.99,
+   "currency": "CAD"
+  },
   {
    "ts": "2026-11-25T07:20:02+00:00",
    "sku": "N70168418V",
@@ -400,24 +418,6 @@
    "site": "Best Buy Canada",
    "old": 289.0,
    "new": 39.99,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-24T21:58:06+00:00",
-   "sku": "N70168418V",
-   "name": "WHOOP Peak",
-   "site": "Best Buy Canada",
-   "old": 439.0,
-   "new": 39.99,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-24T21:58:06+00:00",
-   "sku": "N70168417V",
-   "name": "WHOOP One",
-   "site": "Best Buy Canada",
-   "old": 59.0,
-   "new": 289.0,
    "currency": "CAD"
   }
  ]
