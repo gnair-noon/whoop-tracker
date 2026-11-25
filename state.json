@@ -373,7 +373,7 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "noonAED|N70168418V": {
   "fails": 0,
@@ -381,7 +381,7 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "noonAED|N70168416V": {
   "fails": 0,
@@ -389,10 +389,10 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "amAEAED|N70168417V": {
-  "fails": 4,
+  "fails": 5,
   "local": 699.0,
   "currency": "AED",
   "instock": true,
@@ -400,7 +400,7 @@
   "ts": "2026-11-25T16:15:22+00:00"
  },
  "amAEAED|N70168418V": {
-  "fails": 3,
+  "fails": 4,
   "local": 764.0,
   "currency": "AED",
   "instock": true,
@@ -408,7 +408,7 @@
   "ts": "2026-11-25T17:56:20+00:00"
  },
  "amAEAED|N70168416V": {
-  "fails": 4,
+  "fails": 5,
   "local": 1149.0,
   "currency": "AED",
   "instock": true,
@@ -421,7 +421,7 @@
   "currency": "USD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "amUS|N70168418V": {
   "fails": 0,
@@ -429,7 +429,7 @@
   "currency": "USD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "amUS|N70168416V": {
   "fails": 0,
@@ -437,7 +437,7 @@
   "currency": "USD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "amCACAD|N70168417V": {
   "fails": 0,
@@ -445,7 +445,7 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "amCACAD|N70168418V": {
   "fails": 0,
@@ -453,7 +453,7 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "amCACAD|N70168416V": {
   "fails": 0,
@@ -461,16 +461,16 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00"
+  "ts": "2026-11-25T21:57:28+00:00"
  },
  "bbUS|N70168417V": {
-  "fails": 106
+  "fails": 107
  },
  "bbUS|N70168418V": {
-  "fails": 106
+  "fails": 107
  },
  "bbUS|N70168416V": {
-  "fails": 106
+  "fails": 107
  },
  "bbCACAD|N70168417V": {
   "fails": 0,
@@ -478,7 +478,7 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00",
+  "ts": "2026-11-25T21:57:28+00:00",
   "prev": 139.99
  },
  "bbCACAD|N70168418V": {
@@ -487,7 +487,7 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00",
+  "ts": "2026-11-25T21:57:28+00:00",
   "prev": 59.0
  },
  "bbCACAD|N70168416V": {
@@ -496,25 +496,25 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T20:56:30+00:00",
+  "ts": "2026-11-25T21:57:28+00:00",
   "prev": 59.0
  },
  "wmUS|N70168417V": {
-  "fails": 106
+  "fails": 107
  },
  "wmUS|N70168418V": {
-  "fails": 106
+  "fails": 107
  },
  "wmUS|N70168416V": {
-  "fails": 106
+  "fails": 107
  },
  "wmCA|N70168417V": {
-  "fails": 106
+  "fails": 107
  },
  "wmCA|N70168418V": {
-  "fails": 106
+  "fails": 107
  },
  "wmCA|N70168416V": {
-  "fails": 106
+  "fails": 107
  }
 }
