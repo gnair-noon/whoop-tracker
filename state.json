@@ -7,6 +7,33 @@
  },
  "_changes": [
   {
+   "ts": "2026-11-25T17:56:20+00:00",
+   "sku": "N70168416V",
+   "name": "WHOOP Life",
+   "site": "Best Buy Canada",
+   "old": 59.0,
+   "new": 139.99,
+   "currency": "CAD"
+  },
+  {
+   "ts": "2026-11-25T17:56:20+00:00",
+   "sku": "N70168418V",
+   "name": "WHOOP Peak",
+   "site": "Best Buy Canada",
+   "old": 259.0,
+   "new": 139.99,
+   "currency": "CAD"
+  },
+  {
+   "ts": "2026-11-25T17:56:20+00:00",
+   "sku": "N70168417V",
+   "name": "WHOOP One",
+   "site": "Best Buy Canada",
+   "old": 289.0,
+   "new": 139.99,
+   "currency": "CAD"
+  },
+  {
    "ts": "2026-11-25T15:05:00+00:00",
    "sku": "N70168416V",
    "name": "WHOOP Life",
@@ -338,33 +365,6 @@
    "old": 59.0,
    "new": 289.0,
    "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-24T11:58:37+00:00",
-   "sku": "N70168418V",
-   "name": "WHOOP Peak",
-   "site": "Best Buy Canada",
-   "old": 129.99,
-   "new": 259.0,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-24T11:58:37+00:00",
-   "sku": "N70168417V",
-   "name": "WHOOP One",
-   "site": "Best Buy Canada",
-   "old": 59.0,
-   "new": 289.0,
-   "currency": "CAD"
-  },
-  {
-   "ts": "2026-11-24T10:13:39+00:00",
-   "sku": "N70168418V",
-   "name": "WHOOP Peak",
-   "site": "Best Buy Canada",
-   "old": 39.99,
-   "new": 129.99,
-   "currency": "CAD"
   }
  ],
  "noonAED|N70168417V": {
@@ -373,7 +373,7 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "noonAED|N70168418V": {
   "fails": 0,
@@ -381,7 +381,7 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "noonAED|N70168416V": {
   "fails": 0,
@@ -389,10 +389,10 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "amAEAED|N70168417V": {
-  "fails": 0,
+  "fails": 1,
   "local": 699.0,
   "currency": "AED",
   "instock": true,
@@ -405,10 +405,10 @@
   "currency": "AED",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "amAEAED|N70168416V": {
-  "fails": 0,
+  "fails": 1,
   "local": 1149.0,
   "currency": "AED",
   "instock": true,
@@ -421,7 +421,7 @@
   "currency": "USD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "amUS|N70168418V": {
   "fails": 0,
@@ -429,7 +429,7 @@
   "currency": "USD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "amUS|N70168416V": {
   "fails": 0,
@@ -437,7 +437,7 @@
   "currency": "USD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "amCACAD|N70168417V": {
   "fails": 0,
@@ -445,7 +445,7 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "amCACAD|N70168418V": {
   "fails": 0,
@@ -453,7 +453,7 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "amCACAD|N70168416V": {
   "fails": 0,
@@ -461,60 +461,60 @@
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T16:15:22+00:00"
+  "ts": "2026-11-25T17:56:20+00:00"
  },
  "bbUS|N70168417V": {
-  "fails": 102
+  "fails": 103
  },
  "bbUS|N70168418V": {
-  "fails": 102
+  "fails": 103
  },
  "bbUS|N70168416V": {
-  "fails": 102
+  "fails": 103
  },
  "bbCACAD|N70168417V": {
-  "fails": 1,
-  "local": 289.0,
+  "fails": 0,
+  "local": 139.99,
   "currency": "CAD",
   "instock": true,
   "src": "page",
-  "ts": "2026-11-25T15:05:00+00:00",
-  "prev": 39.99
- },
- "bbCACAD|N70168418V": {
-  "fails": 1,
-  "local": 259.0,
-  "currency": "CAD",
-  "instock": true,
-  "src": "page",
-  "ts": "2026-11-25T15:05:00+00:00",
-  "prev": 59.0
- },
- "bbCACAD|N70168416V": {
-  "fails": 1,
-  "local": 59.0,
-  "currency": "CAD",
-  "instock": true,
-  "src": "page",
-  "ts": "2026-11-25T15:05:00+00:00",
+  "ts": "2026-11-25T17:56:20+00:00",
   "prev": 289.0
  },
+ "bbCACAD|N70168418V": {
+  "fails": 0,
+  "local": 139.99,
+  "currency": "CAD",
+  "instock": true,
+  "src": "page",
+  "ts": "2026-11-25T17:56:20+00:00",
+  "prev": 259.0
+ },
+ "bbCACAD|N70168416V": {
+  "fails": 0,
+  "local": 139.99,
+  "currency": "CAD",
+  "instock": true,
+  "src": "page",
+  "ts": "2026-11-25T17:56:20+00:00",
+  "prev": 59.0
+ },
  "wmUS|N70168417V": {
-  "fails": 102
+  "fails": 103
  },
  "wmUS|N70168418V": {
-  "fails": 102
+  "fails": 103
  },
  "wmUS|N70168416V": {
-  "fails": 102
+  "fails": 103
  },
  "wmCA|N70168417V": {
-  "fails": 102
+  "fails": 103
  },
  "wmCA|N70168418V": {
-  "fails": 102
+  "fails": 103
  },
  "wmCA|N70168416V": {
-  "fails": 102
+  "fails": 103
  }
 }
